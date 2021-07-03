@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(253, 253, 253);
+}
+
+#app {
+  width: 100%;
+}
+
+/* header */
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  box-shadow: -1px 1px 3px 1px rgba(3, 3, 3, 0.2);
+}
+
+.navbar_container {
+  width: 1080px;
+  display: flex;
+  flex-direction: row;
+  padding: 30px 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 2em;
+}
+
+.menu .menu_links {
+  display: flex;
+}
+
+.menu_links li {
+  margin-right: 10px;
+}
+
+.menu_links li a {
+  color: black;
+}
+
+.menu_links li a:hover {
+  color: #333;
+}
+
+/* Banner */
+.banner {
+  height: 400px;
+}
+
+.banner_image {
+  background-image: url("../images/www.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+}
+
+/* body */
+.body {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.body_section {
+  margin-bottom: 25px;
+}
+
+.body_buttom {
+  display: flex;
+  justify-content: center;
+}
+
+.body_buttom button {
+  background-color: orange;
+  padding: 20px 0;
+  min-width: 200px;
+  color: white;
+  font-size: 1.8em;
+  border: none;
+  margin-bottom: 30px;
+}
+
+/* Footer */
+.footer {
+  height: 30px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p a {
+  color: gold;
+}
+
+.footer p a:hover {
+  color: aquamarine;
+}
+
+/* RESPONSIVIDADE */
+@media only screen and (max-width: 1080px) {
+  .body_section {
+    padding: 0 20px;
+    text-align: justify;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .menu {
+    display: none;
+  }
+  .banner_image {
+    background-size: contain;
+  }
+}

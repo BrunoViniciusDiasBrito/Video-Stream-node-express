@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Streameing</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/_videoCall.css" />
+    <link rel="stylesheet" href="css/_style.css" />
+  </head>
+  <body>
+    <div class="video-app">
+      <!-- Menu -->
+      <div class="navbar">
+        <div class="navbar_container">
+          <i class="logo">LOGO</i>
+          <nav class="menu">
+            <ul class="menu_links">
+              <li><a href="/">Inicio</a></li>
+              <li><a href="/streaming">Streaming</a></li>
+              <li><a href="/contato">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <!-- video stream -->
+      <main class="video-container">
+        <video id="videolayer" width="90%" controls>
+          <source
+            src="http://localhost:8000/streaming/video"
+            type="video/mp4"
+          />
+        </video>
+      </main>
+      <!-- spacer -->
+
+      <div id="vspacer"></div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p>
+          Desenvolvido por
+          <a href="https://infoprodutomania.com.br">Infoprodutomania.com.br</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

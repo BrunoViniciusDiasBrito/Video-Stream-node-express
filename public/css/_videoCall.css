@@ -1,0 +1,14 @@
+.video-app {
+  width: 100%;
+}
+
+.video-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+#vspacer {
+  padding: 100px 0;
+}
